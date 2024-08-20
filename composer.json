@@ -1,5 +1,5 @@
 {
-	"name": "georgringer/pressrelations-news-import",
+	"name": "hda-typo3/pressrelations-news-import",
 	"type": "typo3-cms-extension",
 	"description": "Import of news from PressRelations",
 	"authors": [
