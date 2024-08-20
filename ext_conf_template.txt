@@ -1,0 +1,5 @@
+# cat=feature; type=string; label=API URL
+apiUrl = https://public-api.pressrelations.de/rest/v1/
+
+# cat=feature; type=string; label=API Key: The API key for the import
+apiKey =

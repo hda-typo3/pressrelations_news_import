@@ -1,0 +1,19 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: true
+
+  GeorgRinger\PressrelationsNewsImport\:
+    resource: '../Classes/*'
+
+  GeorgRinger\PressrelationsNewsImport\Command\ImportCommand:
+    tags:
+      - name: 'console.command'
+        command: 'news:pressrelations-import'
+
+  GeorgRinger\PressrelationsNewsImport\EventListener\NewsImportPostHydrateEventListener:
+    tags:
+      - name: event.listener
+        identifier: 'pressrelations-newsimportposthydrateevent'
+        event: GeorgRinger\News\Event\NewsImportPostHydrateEvent
